@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3242CB916E3C9DB00532800 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3242CB816E3C9DB00532800 /* Foundation.framework */; };
+		C3242CBC16E3C9DB00532800 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242CBB16E3C9DB00532800 /* main.m */; };
+		C3242CC016E3C9DB00532800 /* MSJSONMapperSampleApp.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C3242CBF16E3C9DB00532800 /* MSJSONMapperSampleApp.1 */; };
+		C3242CCE16E3CA2D00532800 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3242CCD16E3CA2D00532800 /* SenTestingKit.framework */; };
+		C3242CD016E3CA2D00532800 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3242CCF16E3CA2D00532800 /* Cocoa.framework */; };
+		C3242CDA16E3CA2D00532800 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3242CD816E3CA2D00532800 /* InfoPlist.strings */; };
+		C3242CDD16E3CA2D00532800 /* MSJSONMapperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242CDC16E3CA2D00532800 /* MSJSONMapperTest.m */; };
+		C3242CE616E3CA3B00532800 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242CE316E3CA3B00532800 /* Address.m */; };
+		C3242CE716E3CA3B00532800 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242CE316E3CA3B00532800 /* Address.m */; };
+		C3242CE816E3CA3B00532800 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242CE516E3CA3B00532800 /* Person.m */; };
+		C3242CE916E3CA3B00532800 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242CE516E3CA3B00532800 /* Person.m */; };
+		C3242CF416E3CA5500532800 /* MSJSONMapEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242CEC16E3CA5500532800 /* MSJSONMapEntity.m */; };
+		C3242CF516E3CA5500532800 /* MSJSONMapEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242CEC16E3CA5500532800 /* MSJSONMapEntity.m */; };
+		C3242CF616E3CA5500532800 /* MSJSONMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242CEE16E3CA5500532800 /* MSJSONMapper.m */; };
+		C3242CF716E3CA5500532800 /* MSJSONMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242CEE16E3CA5500532800 /* MSJSONMapper.m */; };
+		C3242CF816E3CA5500532800 /* MSJSONMapperManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242CF016E3CA5500532800 /* MSJSONMapperManager.m */; };
+		C3242CF916E3CA5500532800 /* MSJSONMapperManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242CF016E3CA5500532800 /* MSJSONMapperManager.m */; };
+		C3242CFA16E3CA5500532800 /* MSJSONUnmapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242CF316E3CA5500532800 /* MSJSONUnmapper.m */; };
+		C3242CFB16E3CA5500532800 /* MSJSONUnmapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242CF316E3CA5500532800 /* MSJSONUnmapper.m */; };
+		C3242CFE16E3CB1000532800 /* MSJSONUnmapperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242CFD16E3CB1000532800 /* MSJSONUnmapperTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3242CB316E3C9DB00532800 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				C3242CC016E3C9DB00532800 /* MSJSONMapperSampleApp.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C3242CB516E3C9DB00532800 /* MSJSONMapperSampleApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MSJSONMapperSampleApp; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3242CB816E3C9DB00532800 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3242CBB16E3C9DB00532800 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3242CBE16E3C9DB00532800 /* MSJSONMapperSampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSJSONMapperSampleApp-Prefix.pch"; sourceTree = "<group>"; };
+		C3242CBF16E3C9DB00532800 /* MSJSONMapperSampleApp.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MSJSONMapperSampleApp.1; sourceTree = "<group>"; };
+		C3242CCC16E3CA2D00532800 /* MSJSONMapperTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSJSONMapperTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3242CCD16E3CA2D00532800 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C3242CCF16E3CA2D00532800 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		C3242CD216E3CA2D00532800 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C3242CD316E3CA2D00532800 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C3242CD416E3CA2D00532800 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3242CD716E3CA2D00532800 /* MSJSONMapperTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MSJSONMapperTest-Info.plist"; sourceTree = "<group>"; };
+		C3242CD916E3CA2D00532800 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3242CDB16E3CA2D00532800 /* MSJSONMapperTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSJSONMapperTest.h; sourceTree = "<group>"; };
+		C3242CDC16E3CA2D00532800 /* MSJSONMapperTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSJSONMapperTest.m; sourceTree = "<group>"; };
+		C3242CDE16E3CA2D00532800 /* MSJSONMapperTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSJSONMapperTest-Prefix.pch"; sourceTree = "<group>"; };
+		C3242CE216E3CA3B00532800 /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Address.h; path = Sample/Address.h; sourceTree = "<group>"; };
+		C3242CE316E3CA3B00532800 /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Address.m; path = Sample/Address.m; sourceTree = "<group>"; };
+		C3242CE416E3CA3B00532800 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Sample/Person.h; sourceTree = "<group>"; };
+		C3242CE516E3CA3B00532800 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Sample/Person.m; sourceTree = "<group>"; };
+		C3242CEB16E3CA5500532800 /* MSJSONMapEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSJSONMapEntity.h; path = JSONMapper/MSJSONMapEntity.h; sourceTree = "<group>"; };
+		C3242CEC16E3CA5500532800 /* MSJSONMapEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSJSONMapEntity.m; path = JSONMapper/MSJSONMapEntity.m; sourceTree = "<group>"; };
+		C3242CED16E3CA5500532800 /* MSJSONMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSJSONMapper.h; path = JSONMapper/MSJSONMapper.h; sourceTree = "<group>"; };
+		C3242CEE16E3CA5500532800 /* MSJSONMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSJSONMapper.m; path = JSONMapper/MSJSONMapper.m; sourceTree = "<group>"; };
+		C3242CEF16E3CA5500532800 /* MSJSONMapperManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSJSONMapperManager.h; path = JSONMapper/MSJSONMapperManager.h; sourceTree = "<group>"; };
+		C3242CF016E3CA5500532800 /* MSJSONMapperManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSJSONMapperManager.m; path = JSONMapper/MSJSONMapperManager.m; sourceTree = "<group>"; };
+		C3242CF116E3CA5500532800 /* MSJSONMapperProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSJSONMapperProtocol.h; path = JSONMapper/MSJSONMapperProtocol.h; sourceTree = "<group>"; };
+		C3242CF216E3CA5500532800 /* MSJSONUnmapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSJSONUnmapper.h; path = JSONMapper/MSJSONUnmapper.h; sourceTree = "<group>"; };
+		C3242CF316E3CA5500532800 /* MSJSONUnmapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSJSONUnmapper.m; path = JSONMapper/MSJSONUnmapper.m; sourceTree = "<group>"; };
+		C3242CFC16E3CB1000532800 /* MSJSONUnmapperTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSJSONUnmapperTest.h; sourceTree = "<group>"; };
+		C3242CFD16E3CB1000532800 /* MSJSONUnmapperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSJSONUnmapperTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3242CB216E3C9DB00532800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3242CB916E3C9DB00532800 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3242CC816E3CA2D00532800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3242CCE16E3CA2D00532800 /* SenTestingKit.framework in Frameworks */,
+				C3242CD016E3CA2D00532800 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3242CAC16E3C9DB00532800 = {
+			isa = PBXGroup;
+			children = (
+				C3242CBA16E3C9DB00532800 /* MSJSONMapperSampleApp */,
+				C3242CD516E3CA2D00532800 /* MSJSONMapperTest */,
+				C3242CB716E3C9DB00532800 /* Frameworks */,
+				C3242CB616E3C9DB00532800 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3242CB616E3C9DB00532800 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3242CB516E3C9DB00532800 /* MSJSONMapperSampleApp */,
+				C3242CCC16E3CA2D00532800 /* MSJSONMapperTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3242CB716E3C9DB00532800 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3242CB816E3C9DB00532800 /* Foundation.framework */,
+				C3242CCD16E3CA2D00532800 /* SenTestingKit.framework */,
+				C3242CCF16E3CA2D00532800 /* Cocoa.framework */,
+				C3242CD116E3CA2D00532800 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3242CBA16E3C9DB00532800 /* MSJSONMapperSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				C3242CC616E3CA0400532800 /* Sample */,
+				C3242CEA16E3CA4100532800 /* MSJSONMapper */,
+				C3242CBB16E3C9DB00532800 /* main.m */,
+				C3242CBF16E3C9DB00532800 /* MSJSONMapperSampleApp.1 */,
+				C3242CBD16E3C9DB00532800 /* Supporting Files */,
+			);
+			path = MSJSONMapperSampleApp;
+			sourceTree = "<group>";
+		};
+		C3242CBD16E3C9DB00532800 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3242CBE16E3C9DB00532800 /* MSJSONMapperSampleApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3242CC616E3CA0400532800 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				C3242CE216E3CA3B00532800 /* Address.h */,
+				C3242CE316E3CA3B00532800 /* Address.m */,
+				C3242CE416E3CA3B00532800 /* Person.h */,
+				C3242CE516E3CA3B00532800 /* Person.m */,
+			);
+			name = Sample;
+			sourceTree = "<group>";
+		};
+		C3242CD116E3CA2D00532800 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3242CD216E3CA2D00532800 /* AppKit.framework */,
+				C3242CD316E3CA2D00532800 /* CoreData.framework */,
+				C3242CD416E3CA2D00532800 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C3242CD516E3CA2D00532800 /* MSJSONMapperTest */ = {
+			isa = PBXGroup;
+			children = (
+				C3242CDB16E3CA2D00532800 /* MSJSONMapperTest.h */,
+				C3242CDC16E3CA2D00532800 /* MSJSONMapperTest.m */,
+				C3242CFC16E3CB1000532800 /* MSJSONUnmapperTest.h */,
+				C3242CFD16E3CB1000532800 /* MSJSONUnmapperTest.m */,
+				C3242CD616E3CA2D00532800 /* Supporting Files */,
+			);
+			path = MSJSONMapperTest;
+			sourceTree = "<group>";
+		};
+		C3242CD616E3CA2D00532800 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3242CD716E3CA2D00532800 /* MSJSONMapperTest-Info.plist */,
+				C3242CD816E3CA2D00532800 /* InfoPlist.strings */,
+				C3242CDE16E3CA2D00532800 /* MSJSONMapperTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3242CEA16E3CA4100532800 /* MSJSONMapper */ = {
+			isa = PBXGroup;
+			children = (
+				C3242CEB16E3CA5500532800 /* MSJSONMapEntity.h */,
+				C3242CEC16E3CA5500532800 /* MSJSONMapEntity.m */,
+				C3242CED16E3CA5500532800 /* MSJSONMapper.h */,
+				C3242CEE16E3CA5500532800 /* MSJSONMapper.m */,
+				C3242CEF16E3CA5500532800 /* MSJSONMapperManager.h */,
+				C3242CF016E3CA5500532800 /* MSJSONMapperManager.m */,
+				C3242CF116E3CA5500532800 /* MSJSONMapperProtocol.h */,
+				C3242CF216E3CA5500532800 /* MSJSONUnmapper.h */,
+				C3242CF316E3CA5500532800 /* MSJSONUnmapper.m */,
+			);
+			name = MSJSONMapper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3242CB416E3C9DB00532800 /* MSJSONMapperSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3242CC316E3C9DB00532800 /* Build configuration list for PBXNativeTarget "MSJSONMapperSampleApp" */;
+			buildPhases = (
+				C3242CB116E3C9DB00532800 /* Sources */,
+				C3242CB216E3C9DB00532800 /* Frameworks */,
+				C3242CB316E3C9DB00532800 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSJSONMapperSampleApp;
+			productName = MSJSONMapperSampleApp;
+			productReference = C3242CB516E3C9DB00532800 /* MSJSONMapperSampleApp */;
+			productType = "com.apple.product-type.tool";
+		};
+		C3242CCB16E3CA2D00532800 /* MSJSONMapperTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3242CDF16E3CA2D00532800 /* Build configuration list for PBXNativeTarget "MSJSONMapperTest" */;
+			buildPhases = (
+				C3242CC716E3CA2D00532800 /* Sources */,
+				C3242CC816E3CA2D00532800 /* Frameworks */,
+				C3242CC916E3CA2D00532800 /* Resources */,
+				C3242CCA16E3CA2D00532800 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSJSONMapperTest;
+			productName = MSJSONMapperTest;
+			productReference = C3242CCC16E3CA2D00532800 /* MSJSONMapperTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3242CAD16E3C9DB00532800 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Mark Sinkovics";
+			};
+			buildConfigurationList = C3242CB016E3C9DB00532800 /* Build configuration list for PBXProject "MSJSONMapperSampleApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C3242CAC16E3C9DB00532800;
+			productRefGroup = C3242CB616E3C9DB00532800 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3242CB416E3C9DB00532800 /* MSJSONMapperSampleApp */,
+				C3242CCB16E3CA2D00532800 /* MSJSONMapperTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3242CC916E3CA2D00532800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3242CDA16E3CA2D00532800 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C3242CCA16E3CA2D00532800 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3242CB116E3C9DB00532800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3242CBC16E3C9DB00532800 /* main.m in Sources */,
+				C3242CE616E3CA3B00532800 /* Address.m in Sources */,
+				C3242CE816E3CA3B00532800 /* Person.m in Sources */,
+				C3242CF416E3CA5500532800 /* MSJSONMapEntity.m in Sources */,
+				C3242CF616E3CA5500532800 /* MSJSONMapper.m in Sources */,
+				C3242CF816E3CA5500532800 /* MSJSONMapperManager.m in Sources */,
+				C3242CFA16E3CA5500532800 /* MSJSONUnmapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3242CC716E3CA2D00532800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3242CDD16E3CA2D00532800 /* MSJSONMapperTest.m in Sources */,
+				C3242CE716E3CA3B00532800 /* Address.m in Sources */,
+				C3242CE916E3CA3B00532800 /* Person.m in Sources */,
+				C3242CF516E3CA5500532800 /* MSJSONMapEntity.m in Sources */,
+				C3242CF716E3CA5500532800 /* MSJSONMapper.m in Sources */,
+				C3242CF916E3CA5500532800 /* MSJSONMapperManager.m in Sources */,
+				C3242CFB16E3CA5500532800 /* MSJSONUnmapper.m in Sources */,
+				C3242CFE16E3CB1000532800 /* MSJSONUnmapperTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C3242CD816E3CA2D00532800 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3242CD916E3CA2D00532800 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3242CC116E3C9DB00532800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C3242CC216E3C9DB00532800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C3242CC416E3C9DB00532800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSJSONMapperSampleApp/MSJSONMapperSampleApp-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C3242CC516E3C9DB00532800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSJSONMapperSampleApp/MSJSONMapperSampleApp-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C3242CE016E3CA2D00532800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSJSONMapperTest/MSJSONMapperTest-Prefix.pch";
+				INFOPLIST_FILE = "MSJSONMapperTest/MSJSONMapperTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C3242CE116E3CA2D00532800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSJSONMapperTest/MSJSONMapperTest-Prefix.pch";
+				INFOPLIST_FILE = "MSJSONMapperTest/MSJSONMapperTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3242CB016E3C9DB00532800 /* Build configuration list for PBXProject "MSJSONMapperSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3242CC116E3C9DB00532800 /* Debug */,
+				C3242CC216E3C9DB00532800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3242CC316E3C9DB00532800 /* Build configuration list for PBXNativeTarget "MSJSONMapperSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3242CC416E3C9DB00532800 /* Debug */,
+				C3242CC516E3C9DB00532800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3242CDF16E3CA2D00532800 /* Build configuration list for PBXNativeTarget "MSJSONMapperTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3242CE016E3CA2D00532800 /* Debug */,
+				C3242CE116E3CA2D00532800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3242CAD16E3C9DB00532800 /* Project object */;
+}
