@@ -57,6 +57,31 @@
 	NSLog(@"generatedJsonString %@", generatedJsonString);
 }
 
+- (void)testMappingWithMissingFields
+{
+	NSString* originalJsonString = @"{\"lastName\":\"Reid\"}";
+	
+	NSData* originalJsonData = [[originalJsonString dataUsingEncoding:NSUTF8StringEncoding] retain];
+	
+	MSJSONMapperManager* manager = [MSJSONMapperManager sharedManager];
+	
+	Person *elliot = [manager mapJSONData:originalJsonData];
+	
+	STAssertNotNil(elliot, @"Elliot object shouldn't be nil");
+	
+	NSData* generatedJsonData = [manager unmapObject:elliot];
+	
+	STAssertNotNil(generatedJsonData, @"Generated data object shouldn't be nil");
+	
+	NSString* generatedJsonString = [[[NSString alloc] initWithData:generatedJsonData encoding:NSUTF8StringEncoding] autorelease];
+	
+	STAssertTrue(originalJsonString.length == generatedJsonString.length, @"Strings should be equals.");
+	
+	NSLog(@"originalJsonString %@", originalJsonString);
+	
+	NSLog(@"generatedJsonString %@", generatedJsonString);
+}
+
 - (void)testMappingOneRelationship
 {
 	NSString* originalJsonString = @"{\"firstName\":\"Elliot\",\"lastName\":\"Reid\",\"mother\":{\"firstName\":\"Emma\",\"lastName\":\"Smith\"}}";

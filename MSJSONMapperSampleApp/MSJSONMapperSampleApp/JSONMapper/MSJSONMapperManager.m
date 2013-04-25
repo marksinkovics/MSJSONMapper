@@ -80,7 +80,7 @@ static MSJSONMapperManager *sharedManager = nil;
 
 - (void)destroy
 {
-	[_mappedTemplates removeAllObjects];
+	[self removeAllTemplate];
 }
 
 - (void)dealloc
@@ -89,7 +89,6 @@ static MSJSONMapperManager *sharedManager = nil;
 	
     [super dealloc];
 }
-
 
 - (void)addTemplateWithMappedObject:(Class<MSJSONMapperProtocol>)mappedClass
 {
@@ -105,17 +104,30 @@ static MSJSONMapperManager *sharedManager = nil;
 	[_mappedTemplates setObject:entity forKey:mappedProperties];
 }
 
+- (void)removeAllTemplate
+{
+	[_mappedTemplates removeAllObjects];
+}
+
 - (id)mapJSONData:(NSData*)jsonData
 {
 	MSJSONMapper* mapper = [[MSJSONMapper alloc] initWithJSONData:jsonData mappedTemplates:_mappedTemplates];
 	
-	return [mapper map];
+	id result = [mapper map];
+	
+	[mapper release];
+	
+	return result;
 }
 
 - (NSData*)unmapObject:(id)object
 {
 	MSJSONUnmapper* unmapper = [[MSJSONUnmapper alloc] initWithObject:object mappedTemplates:_mappedTemplates];
 	
-	return [unmapper unmap];
+	NSData* result = [unmapper unmap];
+	
+	[unmapper release];
+	
+	return result;
 }
 @end

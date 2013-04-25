@@ -22,18 +22,20 @@
 
 + (id)createInstance;
 
-#pragma mark - Unit Test
-
-- (void)destroy;
-
 #pragma mark - Instance Methods
 
 - (void)addTemplateWithMappedObject:(Class<MSJSONMapperProtocol>)mappedClass;
 
 - (void)addTemplateWithMappedClass:(Class)mappedClass mappedProperties:(NSSet*)mappedProperties;
 
+- (void)removeAllTemplate;
+
 - (id)mapJSONData:(NSData*)jsonData;
 
 - (NSData*)unmapObject:(id)object;
+
+#pragma mark - Unit Test
+
+- (void)destroy;
 
 @end

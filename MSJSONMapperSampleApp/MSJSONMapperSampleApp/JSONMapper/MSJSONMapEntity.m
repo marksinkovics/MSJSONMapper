@@ -24,9 +24,10 @@
 {
     self = [super init];
 	
-    if (self)
+    if (self && mappedProperties.count > 0)
 	{
 		self.mappedClass = mappedClass;
+		
 		self.mappedProperties = mappedProperties;
     }
     return self;
@@ -53,7 +54,7 @@
 		}
 	}
 	
-	return object;
+	return [object autorelease];
 }
 
 @end
